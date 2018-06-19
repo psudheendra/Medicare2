@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { CmsComponent } from './cms/cms.component';
 
 const routes: Routes = [
   { path: 'tbd', component: AppComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'cms', component: CmsComponent }
 ];
 
 
