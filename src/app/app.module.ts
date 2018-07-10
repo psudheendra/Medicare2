@@ -50,12 +50,14 @@ import {
   
 } from '@angular/material';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { FileSelectDirective } from 'ng2-file-upload';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    CmsComponent
+    CmsComponent,
+    FileSelectDirective
   ],
   imports: [
     MDBBootstrapModule,

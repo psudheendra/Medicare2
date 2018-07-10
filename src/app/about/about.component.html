@@ -6,6 +6,10 @@
       CMS Communication - Reminder - Process for Requesting an HPMS
     </div>
 
+    <div class="col-sm-12 pb-1 labelstyle ">
+        <label for="dummy"></label>
+    </div>
+
     <div class="col-sm-1 pb-3 labelstyle">
       <label for="createdBy">Created By:</label>
     </div>
@@ -103,15 +107,35 @@
     <div class="col-sm-12 pb-1 labelstyle divbgyello">
       Content
     </div>
+
+    <div class="col-sm-12 pb-1 labelstyle ">
+        <label for="dummy"></label>
+    </div>
+
     <div class="col-sm-1 pb-3 labelstyle">
-        
-      </div>
+
+    </div>
     <div class="col-sm-8 pb-3">
-      <div [froalaEditor]>Hello, Froala!</div>
+      <div [froalaEditor] style="line-height: 100px;">Hello, Froala!</div>
     </div>
     <div class="col-sm-3 pb-3 labelstyle">
-        
-      </div>
+
+    </div>
+
+    <div class="col-sm-1 pb-3 labelstyle">
+        <label for="dummy">Attachments: </label>
+    </div>
+    <div class="col-sm-8 pb-3">
+      <input type="file" name="photo" ng2FileSelect [uploader]="uploader" />
+
+      <button type="button" class="btn btn-success btn-s" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+        Upload File
+      </button>
+    </div>
+    <div class="col-sm-3 pb-3 labelstyle">
+
+    </div>
+
 
 
     <!-- <div class="col-sm-5 pb-3">
