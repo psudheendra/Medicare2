@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -8,7 +8,7 @@ import { CmsComponent } from './cms/cms.component';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import {
 
@@ -49,7 +49,7 @@ import {
   MatTreeModule,
   
 } from '@angular/material';
-
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 @NgModule({
   declarations: [
@@ -58,6 +58,7 @@ import {
     CmsComponent
   ],
   imports: [
+    MDBBootstrapModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -98,8 +99,11 @@ import {
     MatTreeModule,
     FormsModule,
     ReactiveFormsModule,
+    FroalaEditorModule.forRoot(), 
+    FroalaViewModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }

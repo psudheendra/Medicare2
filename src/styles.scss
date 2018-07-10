@@ -1,5 +1,4 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-
 * {
     box-sizing: border-box;
 }
@@ -8,13 +7,13 @@ body {
     margin: 0;
 }
 
-.navbar {
+.navbar-o {
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar a {
+.navbar-o a {
     float: left;
     font-size: 16px;
     color: white;
@@ -23,12 +22,12 @@ body {
     text-decoration: none;
 }
 
-.dropdown {
+.dropdown-o {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown-o .dropbtn-o {
     font-size: 16px;    
     border: none;
     outline: none;
@@ -39,11 +38,11 @@ body {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar-o a:hover, .dropdown-o:hover .dropbtn-o {
     background-color: red;
 }
 
-.dropdown-content {
+.dropdown-content-o {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -53,13 +52,13 @@ body {
     z-index: 1;
 }
 
-.dropdown-content .header {
+.dropdown-content-o .header {
     background: red;
     padding: 16px;
     color: white;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-o:hover .dropdown-content-o {
     display: block;
 }
 
